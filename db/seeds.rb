@@ -17,7 +17,18 @@
 #     share_population_in_metro_areas: row["share_population_in_metro_areas"],
 #     share_population_with_high_school_degree: row["share_population_with_high_school_degree"],
 #   })
-#   # puts "#{s.state} saved"
 # end
 
 # puts "There are now #{State.count} rows in the data table"
+
+# require "csv"
+
+# CSV.foreach(Rails.root.join("lib", "seeds", "abbreviations.csv"), headers: true) do |row|
+#   Abbreviation.create({
+#     state: row["\xEF\xBB\xBFState"],
+#     abbrev: row["Abbrev"],
+#     code: row["Code"],
+#   })
+# end
+
+# puts "There are now #{Abbreviation.count} rows in the data table"
