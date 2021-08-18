@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# require "csv"
+
+# csv_text = File.read(Rails.root.join("lib", "seeds", "state_data.csv"))
+# csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
+# csv.each do |row|
+#   State.create({
+#     name: row["state"],
+#     median_household_income: row["median_household_income"],
+#     share_unemployed_seasonal: row["share_unemployed_seasonal"],
+#     share_population_in_metro_areas: row["share_population_in_metro_areas"],
+#     share_population_with_high_school_degree: row["share_population_with_high_school_degree"],
+#   })
+#   # puts "#{s.state} saved"
+# end
+
+# puts "There are now #{State.count} rows in the data table"
