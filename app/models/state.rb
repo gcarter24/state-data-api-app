@@ -1,3 +1,3 @@
 class State < ApplicationRecord
-  has_many :abbreviations
+  belongs_to :state_abbreviations
 end
