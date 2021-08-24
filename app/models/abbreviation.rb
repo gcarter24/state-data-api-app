@@ -1,3 +1,4 @@
 class Abbreviation < ApplicationRecord
-  belongs_to :state_abbreviations
+  has_many :state_abbreviations
+  has_many :states, through: :state_abbreviations
 end

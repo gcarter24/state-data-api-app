@@ -32,3 +32,10 @@
 # end
 
 # puts "There are now #{Abbreviation.count} rows in the data table"
+
+# i = 1
+
+# while i <= 51
+#   StateAbbreviation.create(state_id: i, abbrev_id: i)
+#   i += 1
+# end
