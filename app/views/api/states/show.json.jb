@@ -1,7 +1,7 @@
 {
   id: @state.id,
   name: @state.name,
-  # abbrev: @state.abbreviations.map do |abbrev| { abbrev: abbreviation.code } end,
+  abbrev: @state.abbreviations[0].code,
   median_household_income: @state.median_household_income,
   share_unemployed_seasonal: @state.share_unemployed_seasonal,
   share_population_in_metro_areas: @state.share_population_in_metro_areas,

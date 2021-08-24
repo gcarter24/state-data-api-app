@@ -5,8 +5,8 @@ class Api::StatesController < ApplicationController
   end
 
   def show
-    # @state = State.find_by(id: params[:id])
-    @state = State.joins(:abbreviations).select("abbreviations.code").where("abbreviations.id" => 1)
+    @state = State.find_by(id: params[:id])
+    # @state = State.joins(:abbreviations).select("abbreviations.code").where(code: params[:code])
     render "show.json.jb"
   end
 end

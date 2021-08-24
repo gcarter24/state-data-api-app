@@ -1,4 +1,4 @@
 class StateAbbreviation < ApplicationRecord
   belongs_to :state
-  belongs_to :abbrev
+  belongs_to :abbreviation
 end
