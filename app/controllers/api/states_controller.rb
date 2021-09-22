@@ -9,5 +9,3 @@ class Api::StatesController < ApplicationController
     render "show.json.jb"
   end
 end
-
-
