@@ -6,6 +6,5 @@ Rails.application.routes.draw do
   namespace :api do
     get "/states" => "states#index"
     get "/states/:code" => "states#show"
-    # get "/states/:id" => "states#show"
   end
 end
